@@ -1,23 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
-
+<!DOCTYPE html>
 <html>
   <head>
-    <meta name="generator" content="HTML Tidy, see www.w3.org">
-
-    <title>Request Parm/Form Demo</title>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <script src="js/flashQuiz.js"></script>
   </head>
 
   <body>
-    <h3>Form/Request Param Demo</h3>
+    <h1>Flash Cards with Team MLJ</h1>
 
+    <form action="/java112/mlj-servlet" method="GET">
 
-    <form action="/java112/request-params" method="GET">
-          <input type="text" name="param1" /><br />
-          <br />
-           <input type="text" name="param2" value="default value" /><br />
-          <br />
-           <input type="submit" name="submit" value="Enter" />
-        </form>
-
+    <table border="1" id="mainContainer">
+      <tr id="answersRow">
+          <td id="answersData">
+              Which type of key will not open a door?<input type="text" name="answer1"/><br>
+              What did the turkey say to the computer?<input type="text" name="answer2"/><br>
+          </td>
+      </tr>
+      <tr id="submitRow">
+          <td id="submitData">
+              <input type="submit" name="submit" value="Enter" />
+          </td>
+      </tr>
+    </table>
+    </form>
   </body>
+
+</html>
+
+  
 </html>

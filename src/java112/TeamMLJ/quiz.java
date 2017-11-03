@@ -1,4 +1,4 @@
-
+/*
 package java112.demos;
 
 import java.io.*;
@@ -13,6 +13,7 @@ import java.util.*;
  *
  *@author  LMims
  */
+/*
 @WebServlet(
     name = "attributeDemo",
     urlPatterns = { "/quiz", "/game" }
@@ -27,6 +28,7 @@ public class Game extends HttpServlet {
      *@exception  ServletException  if there is a Servlet failure
      *@exception  IOException       if there is an IO failure
      */
+/*
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Treemap <Integer, Array> quiz = new TreeMap <String, Array>;
@@ -86,4 +88,4 @@ public class Game extends HttpServlet {
 }
 
 
-}
+}*/
