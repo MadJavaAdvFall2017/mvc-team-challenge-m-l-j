@@ -57,9 +57,6 @@ public class MvcDemo extends HttpServlet {
         myBean.setQuestion(randomKey);
         myBean.setAnswer(value);
 
-        //myBean.setQuestion1("What kind of key will not open a door?");
-        //myBean.setQuestions("What kind of key cannot open a door?", "A turkey");
-
         request.setAttribute("myCoolBean", myBean);
 
         String url = "/index.jsp";
