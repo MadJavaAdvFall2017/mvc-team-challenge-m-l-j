@@ -15,19 +15,19 @@
         type="java112.project3.Question"
         scope="request" />
 
-     ${q1.getSolution}<br />
+     ${q1.solution}<br />
 
      <jsp:useBean id="question2"
          type="java112.project3.Question"
          scope="request" />
 
-     ${q2.getFormData}<br />
+     ${q2.formData}<br />
 
      <jsp:useBean id="question3"
          type="java112.project3.Question"
          scope="request" />
 
-     ${q3.getFormData}<br />
+     ${q3.formData}<br />
 
       <tr id="submitRow">
           <td id="submitData">

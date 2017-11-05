@@ -1,4 +1,5 @@
 package java112.project3;
+import java.io.Serializable;
 
 /**
  *  This is a JavaBean to demonstrate using beans with JSP.
@@ -6,7 +7,7 @@ package java112.project3;
  *@author  LMims
  */
 
-public class Question extends Object {
+public class Question extends Object implements Serializable {
     private int number;
     private String solution;
     private String question;
@@ -16,6 +17,22 @@ public class Question extends Object {
     private String id;
     private String guess;
     private String formData;
+
+    public Question() {
+        number =  0;
+        solution =  "default";
+        question =  "default";
+        choiceOne =  "default";
+        choiceTwo =  "default";
+        choiceThree =  "default";
+        id =  "mysterious";
+        guess =  "default";
+        formData =  "default";
+
+    }
+
+
+
 	/**
 	 * Returns the value of number.
 	 */

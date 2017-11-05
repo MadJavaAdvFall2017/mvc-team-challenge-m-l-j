@@ -72,7 +72,8 @@
         <div class="content_blue_container_boxl">
 		  <h4>MLJ Project</h4>
 	      <div class="readmore">
-		    <a href="/java112/QuizServlet">Our Project</a>
+		    <a href="/java112/QuizServlet">Our Project</a><br />
+            <a href="/java112/mvcDemo">Bean Demo</a><br />
 		  </div><!--close readmore-->
 	    </div><!--close content_blue_container_box1-->
 	    <br style="clear:both"/>
