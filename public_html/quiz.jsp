@@ -9,25 +9,32 @@
   </head>
   <body>
     <h1>Flash Cards</h1>
+    <form>
     <table border="1" id="mainContainer">
-      <tr id="questionNumberRow">
-          <td id="questionNumberData">Question number goes here</td>
-      </tr>
-      <tr id="questionRow">
-          <td id="questionData">Question goes here</td>
-      </tr>
-      <tr id="answersRow">
-          <td id="answersData">
-              <input type="radio" name="answer" value="1">Answer 1<br>
-              <input type="radio" name="answer" value="2">Answer 2<br>
-              <input type="radio" name="answer" value="3">Answer 3
-          </td>
-      </tr>
+    <jsp:useBean id="question1"
+        type="java112.project3.Question"
+        scope="request" />
+
+     ${q1.getFormData}<br />
+
+     <jsp:useBean id="question2"
+         type="java112.project3.Question"
+         scope="request" />
+         
+     ${q2.getFormData}<br />
+
+     <jsp:useBean id="question3"
+         type="java112.project3.Question"
+         scope="request" />
+
+     ${q3.getFormData}<br />
+
       <tr id="submitRow">
           <td id="submitData">
               <input type="button" value="submit" id="submit">
           </td>
       </tr>
     </table>
+    <form>
   </body>
 </html>
