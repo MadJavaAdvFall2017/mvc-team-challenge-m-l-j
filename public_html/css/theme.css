@@ -20,7 +20,7 @@ body {
 
 #answer {
     background-color : sandybrown;
-    border-bottom-left-radius: 25px;
+    border-bradius: 25px;
     border-bottom-right-radius: 25px;
 }
 
@@ -44,4 +44,14 @@ h1 {
 
 a {
     color: yellow;
+}
+
+.answer {
+    background-color : sandybrown;
+    border-radius: 5px;
+    padding : 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
