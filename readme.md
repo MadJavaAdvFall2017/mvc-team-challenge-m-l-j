@@ -3,6 +3,9 @@
 
 //TODO add your team member names below.
 ### Team Members:
+Michael
+Leroy
+Jill
 
 ### Repository Notes
 1. This repository is structured like your projects repository for class, with one main difference:
