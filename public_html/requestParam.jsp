@@ -16,13 +16,20 @@
     <table border="1" id="mainContainer">
       <tr id="answersRow">
           <td id="answersData">
-              Which type of key will not open a door?<input type="text" name="answer1"/><br>
-              What did the turkey say to the computer?<input type="text" name="answer2"/><br>
+              <div id="question1" class="questions">Which type of key will not open a door?
+                  <input type="text" name="answer1"/>
+              </div><br>
+              <div id="question2" class="questions">What did the turkey say to the computer?
+                  <input type="text" name="answer2"/>
+              </div><br>
           </td>
       </tr>
       <tr id="submitRow">
           <td id="submitData">
-              <input type="submit" name="submit" value="Enter" />
+              <div id="buttonContainer">
+                <input class="buttons" type="button" name="next" id="next" value="next question" />
+                <input class="buttons" type="submit" name="submit" value="Submit" id="submit" />
+              </div>
           </td>
       </tr>
     </table>

@@ -25,7 +25,7 @@
       </tr>
       <tr id="submitRow">
           <td id="submitData">
-              <input type="button" value="submit">
+              <input type="button" value="submit" id="submit">
           </td>
       </tr>
     </table>
