@@ -1,34 +1,47 @@
 body {
-    background-color : ghostwhite;
+    background-color : saddlebrown;
 }
 
-#mainContainer {
-    position : relative;
-    display : block;
-    width : 30em;
+.questionAnswer {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color : ghostwhite;
+    font-size: 5em;
+    padding : 5px;
 }
 
-#answersRow, #answersData {
-    width : 30em;
-    background-color : aqua;
-    diplay : block;
+#question {
+    background-color : darkorange;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
-.questions {
-    position : absolute;
-    top : 1em; left : 1em;
+#answer {
+    background-color : sandybrown;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
-#submit {
+#answerText {
     visibility : hidden;
 }
 
-#buttonContainer {
-    position : relative;
-    height : 1.4em;
+p {
+    margin: 0;
 }
 
-.buttons {
-    position : absolute;
-    top : 0; left : 1em;
+h1 {
+    text-align: center;
+    width : 100%;
+}
+
+#linkContainer {
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    color: yellow;
 }
