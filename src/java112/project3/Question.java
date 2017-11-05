@@ -153,9 +153,9 @@ public class Question extends Object {
 
 
     /**
-	 * Returns the value html formated question object.
+	 * sets the html formated question.
 	 */
-	public String getFormData() {
+	public void setFormData() {
 
         this.formData = "<tr class='questionNumberRow'>\n" +
         "<td class='questionNumberData'>"+ this.number +"</td>\n" +
@@ -170,8 +170,14 @@ public class Question extends Object {
                 "<input type='radio' name='answer' value='3'>" + this.choiceThree + "\n" +
             "</td>\n" +
         "</tr>\n";
+}
+
+    /**
+     * returns the html formated question.
+     */
+    public String getFormData() {
         return this.formData;
-	}
+    }
 
 
 

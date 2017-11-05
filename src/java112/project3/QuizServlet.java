@@ -33,6 +33,7 @@ public class QuizServlet extends HttpServlet {
         q1.setChoiceTwo("Sequoya");
         q1.setChoiceThree("Squanto");
         q1.setId("one");
+        q1.setFormData();
 		request.setAttribute("question1", q1);
 
         Question q2 = new Question();
@@ -43,6 +44,7 @@ public class QuizServlet extends HttpServlet {
         q2.setChoiceTwo("Turkey");
         q2.setChoiceThree("Squab");
         q2.setId("two");
+        q2.setFormData();
 		request.setAttribute("question2", q2);
 
 		Question q3 = new Question();
@@ -53,7 +55,7 @@ public class QuizServlet extends HttpServlet {
         q3.setChoiceTwo("Third Rock");
         q3.setChoiceThree("Plymouth Rock");
         q3.setId("three");
-
+        q3.setFormData();
 		request.setAttribute("question3", q3);
 
 

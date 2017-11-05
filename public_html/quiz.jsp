@@ -15,12 +15,12 @@
         type="java112.project3.Question"
         scope="request" />
 
-     ${q1.getFormData}<br />
+     ${q1.getSolution}<br />
 
      <jsp:useBean id="question2"
          type="java112.project3.Question"
          scope="request" />
-         
+
      ${q2.getFormData}<br />
 
      <jsp:useBean id="question3"
