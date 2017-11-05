@@ -2,39 +2,38 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Radio Quiz</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/theme.css">
-    <script src="js/flashQuiz.js"></script>
-  </head>
+    <link rel="stylesheet" type="text/css" href="css/theme2.css">
+     </head>
   <body>
-    <h1>Flash Cards</h1>
-    <form>
-    <table border="1" id="mainContainer">
-    <jsp:useBean id="question1"
-        type="java112.project3.Question"
-        scope="request" />
+    <h1>Radio Quiz</h1>
+    <form method="POST" action="">
+        <p>  ${question1.number} ${question1.question}<br />
+            <input type="radio" name="answer1" value="1"> ${question1.choiceOne}<br />
+            <input type="radio" name="answer1" value="2">  ${question1.choiceTwo}<br />
+            <input type="radio" name="answer1" value="3">  ${question1.choiceThree}</p><br />
 
-     ${q1.solution}<br />
+        <p> ${question2.number} ${question2.question}<br />
+             <input type="radio" name="answer2" value="1"> ${question2.choiceOne}<br />
+             <input type="radio" name="answer2" value="2">  ${question2.choiceTwo}<br />
+             <input type="radio" name="answer2" value="3">  ${question2.choiceThree}</p><br />
 
-     <jsp:useBean id="question2"
-         type="java112.project3.Question"
-         scope="request" />
+         <p> ${question3.number} ${question3.question}<br />
+              <input type="radio" name="answer3" value="3"> ${question3.choiceOne}<br />
+              <input type="radio" name="answer3" value="3">  ${question3.choiceTwo}<br />
+              <input type="radio" name="answer3" value="3">  ${question3.choiceThree}</p><br />
 
-     ${q2.formData}<br />
 
-     <jsp:useBean id="question3"
-         type="java112.project3.Question"
-         scope="request" />
+                 <input type="button" value="submit">
 
-     ${q3.formData}<br />
 
-      <tr id="submitRow">
-          <td id="submitData">
-              <input type="button" value="submit">
-          </td>
-      </tr>
-    </table>
-    <form>
+
+
+
+
+
+
+     </form>
   </body>
 </html>

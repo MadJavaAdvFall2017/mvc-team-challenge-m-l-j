@@ -1,5 +1,5 @@
 package java112.project3;
-
+import java.io.Serializable;
 import java.util.*;
 
 /**
@@ -7,7 +7,7 @@ import java.util.*;
  *
  *@author    midavis
  */
-public class BeanOne extends Object {
+public class BeanOne extends Object implements Serializable {
 
     private  String  question;
     private  String  answer;

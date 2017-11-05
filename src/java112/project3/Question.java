@@ -1,6 +1,6 @@
 package java112.project3;
 import java.io.Serializable;
-
+import java.util.*;
 /**
  *  This is a JavaBean to demonstrate using beans with JSP.
  *
@@ -16,7 +16,7 @@ public class Question extends Object implements Serializable {
     private String choiceThree;
     private String id;
     private String guess;
-    private String formData;
+
 
     public Question() {
         number =  0;
@@ -27,7 +27,6 @@ public class Question extends Object implements Serializable {
         choiceThree =  "default";
         id =  "mysterious";
         guess =  "default";
-        formData =  "default";
 
     }
 
@@ -167,35 +166,5 @@ public class Question extends Object implements Serializable {
 	public void setGuess(String guess) {
 		this.guess = guess;
 	}
-
-
-    /**
-	 * sets the html formated question.
-	 */
-	public void setFormData() {
-
-        this.formData = "<tr class='questionNumberRow'>\n" +
-        "<td class='questionNumberData'>"+ this.number +"</td>\n" +
-        "</tr>\n" +
-        "<tr class='questionRow'>\n" +
-        "<td class='questionData'>"+ this.question + "</td>\n" +
-        "</tr>\n" +
-        "<tr class='answersRow'>\n" +
-        "<td class='answersData'>\n" +
-                "<input type='radio' name='answer' value='1'>" + this.choiceOne + "<br>\n" +
-                "<input type='radio' name='answer' value='2'>" + this.choiceTwo + "<br>\n" +
-                "<input type='radio' name='answer' value='3'>" + this.choiceThree + "\n" +
-            "</td>\n" +
-        "</tr>\n";
-}
-
-    /**
-     * returns the html formated question.
-     */
-    public String getFormData() {
-        return this.formData;
-    }
-
-
 
 }

@@ -4,7 +4,7 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
-
+import java.util.*;
 /**
  * @author LMims
  *
@@ -23,7 +23,7 @@ public class QuizServlet extends HttpServlet {
      *@exception  ServletException  if there is a Servlet failure
      *@exception  IOException       if there is an IO failure
      */
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         Question q1 = new Question();
         q1.setNumber(1);
@@ -33,7 +33,7 @@ public class QuizServlet extends HttpServlet {
         q1.setChoiceTwo("Sequoya");
         q1.setChoiceThree("Squanto");
         q1.setId("one");
-        q1.setFormData();
+        q1.setGuess("");
 		request.setAttribute("question1", q1);
 
         Question q2 = new Question();
@@ -44,7 +44,8 @@ public class QuizServlet extends HttpServlet {
         q2.setChoiceTwo("Turkey");
         q2.setChoiceThree("Squab");
         q2.setId("two");
-        q2.setFormData();
+        q2.setGuess("");
+
 		request.setAttribute("question2", q2);
 
 		Question q3 = new Question();
@@ -55,7 +56,7 @@ public class QuizServlet extends HttpServlet {
         q3.setChoiceTwo("Third Rock");
         q3.setChoiceThree("Plymouth Rock");
         q3.setId("three");
-        q3.setFormData();
+        q3.setGuess("");
 		request.setAttribute("question3", q3);
 
 
@@ -67,5 +68,23 @@ public class QuizServlet extends HttpServlet {
                 = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }
+
+    /**
+    * This init method logs time and the servlet name to log files
+    *
+    */
+
+
+       public void init(){
+
+       String now = new Date().toString();
+
+       //log time
+       System.out.print(now);
+       System.out.println("Is time logging?" + now);
+       log("Inside QuizServlet" + now);
+
+
+}
 
 }
