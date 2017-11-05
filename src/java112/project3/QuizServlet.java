@@ -11,7 +11,7 @@ import javax.servlet.annotation.*;
  */
 @WebServlet(
     name = "QuizServlet",
-    urlPatterns = {"QuizServlet", "/quiz-servlet" }
+    urlPatterns = {"/QuizServlet", "/quizservlet" }
 )
 public class QuizServlet extends HttpServlet {
 
@@ -33,8 +33,9 @@ public class QuizServlet extends HttpServlet {
         q1.setChoiceTwo("Sequoya");
         q1.setChoiceThree("Squanto");
         q1.setId("one");
-		request.setAttribute("question1", q1);	
-		
+        q1.setFormData();
+		request.setAttribute("question1", q1);
+
         Question q2 = new Question();
         q2.setNumber(2);
         q2.setSolution("Turkey");
@@ -43,8 +44,9 @@ public class QuizServlet extends HttpServlet {
         q2.setChoiceTwo("Turkey");
         q2.setChoiceThree("Squab");
         q2.setId("two");
+        q2.setFormData();
 		request.setAttribute("question2", q2);
-        
+
 		Question q3 = new Question();
         q3.setNumber(3);
         q3.setSolution("Squanto");
@@ -53,7 +55,7 @@ public class QuizServlet extends HttpServlet {
         q3.setChoiceTwo("Third Rock");
         q3.setChoiceThree("Plymouth Rock");
         q3.setId("three");
-
+        q3.setFormData();
 		request.setAttribute("question3", q3);
 
 
