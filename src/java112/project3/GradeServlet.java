@@ -23,29 +23,29 @@ public class GradeServlet extends HttpServlet {
      *@exception  ServletException  if there is a Servlet failure
      *@exception  IOException       if there is an IO failure
      */
-    public void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         int points = 0;
         int score = 0;
+        String answer1 = request.getParameter("answer1");
+        String answer2 = request.getParameter("answer2");
+        String answer3 = request.getParameter("answer3");
 
-        String answer1 = replaceIfMissingOrDefault(answer1, "");
-        String answer2 = replaceIfMissingOrDefault(answer2, "");
-        String answer3 = replaceIfMissingOrDefault(answer3, "");
-
-        q1.setGuess(answer1);
-        q2.setGuess(answer2);
-        q3.setGuess(answer3);
+        String solution1 = request.getParameter("solution1");
+        String solution2 = request.getParameter("solution2");
+        String solution3 = request.getParameter("solution3");
 
 
-        if (q1.getAnswer() == q1.getGuess()) {
+
+        if (solution1 == answer1) {
             points += 100;
         }
 
-        if (q2.getAnswer() == q2.getGuess()) {
+        if (solution2 == answer2) {
             points += 100;
         }
 
-        if (q3.getAnswer() == q3.getGuess()) {
+        if (solution2 == answer3) {
             points += 100;
         }
         score = points / 300;
@@ -64,6 +64,7 @@ public class GradeServlet extends HttpServlet {
                 = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }
+
 
     /**
     * This init method logs time and the servlet name to log files

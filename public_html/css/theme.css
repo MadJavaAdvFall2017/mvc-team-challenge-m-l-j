@@ -55,3 +55,14 @@ a {
     margin-right: auto;
 
 }
+
+.centered {
+    background-color : sandybrown;
+    border-radius: 5px;
+    padding : 5px;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
