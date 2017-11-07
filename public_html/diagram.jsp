@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Hi There!</h1>
+    <img src="images/diagram.svg">
     <a href="mvc">Home</a>
 </body>
 </html>
