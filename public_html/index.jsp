@@ -9,10 +9,13 @@
   </head>
   <body>
     <h1>Thanksgiving Jokes!</h1>
-    <div id="linkContainer">
+    <div class="linkContainer">
         <a href="mvc">More Jokes!</a>
     </div>
     <div id="question" class="questionAnswer">${myCoolBean.question}</div>
     <div id="answer" class="questionAnswer"><p id="answerText">${myCoolBean.answer}</p></div>
+    <div class="linkContainer">
+        <a href="diagram.jsp">Diagram</a>
+    </div>
   </body>
 </html>
