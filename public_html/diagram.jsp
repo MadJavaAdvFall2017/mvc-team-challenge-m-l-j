@@ -8,7 +8,7 @@
 <body>
     <h1>Hi There!</h1>
     <img src="images/diagram.svg">
-    <img style="max-width: 100%;" src="images/process.jpg">
+    <img style="max-width: 75%;" src="images/process.jpg">
 
 
     <a href="mvc">Home</a>
